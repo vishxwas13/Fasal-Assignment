@@ -17,7 +17,7 @@ const App = () => {
 		// http://www.omdbapi.com/?i=tt3896198&apikey=1b993dd7
 
 		const response = await fetch(url);
-		const responseJson = await response.json();
+		const responseJson = await response.json(); 
 
 		if (responseJson.Search) {
 			setMovies(responseJson.Search);
